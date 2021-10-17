@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Meu primeiro site</title>
+	<meta name="description" content="Codificação Front-End, SENAI" />
+	<meta name="keywords" content="HTML, CSS, JavaScript, SENAI" />
+	<meta name="author" content="Fabio lazaro" />
+	<meta name="viewport" content="width=devide-width, initial-scale=0.1" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width" , initial-scale=1.0>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<nav id="menu">
+			<a href="index.html">home</a>
+			<a href="hardware.html">hardware</a>
+			<a href="celulares/cel_acessorios.html">Celulares</a>
+			<a href="listas.html">Listas</a>
+			<a href="tabelas.html">Tabelas</a>
+			<a href="formularios.html">Formulários</a>
+			<a href="Áudio-e-Vídeo.html">Áudios e Vídeos</a>
+		</nav>
+		<h1>Bem-vindo à página de exemplo</h1>
+		<h2>Complemente seus estudos</h2>
+		<div style="height:100px; overflow:hidden">
+			<img src="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_960_720.jpg" alt="código HTML"
+				width="100%" />
+		</div>
+		<section>
+			<h3>Resumo</h3>
+			<p>Aqui, veremos algumas tags importantes do body, como: header, nav, section, article e footer,
+				além de algumas dicas.</p>
+			<article>
+				<h4>Dicas</h4>
+				<p>As tags abordadas aqui são importantes, mas não são as únicas. Pesquise outras tags e seus
+					atributos e mantenha-se sempre informado.</p>
+			</article>
+		</section>
+	</header>
+
+	<!--FORMATAÇÃO DE TEXTO-->
+	<h1>FORMATAÇÃO DE TEXTO</h1>
+	<h1>H1 é o título principal</h1>
+	<h2>H2 é subtítulo de h1</h2>
+	<h3>H3 é subtítulo de h2</h3>
+	<h4>H4 é subtítulo de h3</h4>
+	<h5>H5 é subtítulo de h4</h5>
+	<h6>H6 é subtítulo de h5</h6>
+	<p>O texto ainda pode ter outras formatações, como:</br>
+		<b>negrito</b>, <br>
+		<i>itálico</i>, <br>
+		<u>sublinhado</u>, <br>
+		entre outros.
+	</p>
+	<hr style="width:50%;height:3px;background-color:red">
+	A tag <strong>hr</strong> cria uma linha que pode ser estilizada.</hr>
+
+	<figure class="banner-home">
+		<!-- aqui a tag figure pode agrupar outras imagens nessa class, mas nesse exemplo só há uma imagem -->
+		<img src="https://cdn.pixabay.com/photo/2017/06/29/10/28/games-2453777_960_720.jpg" alt="banner da home"
+			width="50%">
+		<!-- o src é uma imagem online, mas poderia ser um caminho local. Experimente salvar esse código em um arquivo HTML local e chamar uma imagem em seu computador -->
+		<!-- o atributo alt é utilizado em ferramentas de acessibilidade  -->
+		<!-- a largura está definida em porcentagem. Experimente trocar por uma medida em pixels -->
+		<figcaption> Banner da home</figcaption>
+
+	</figure>
+
+	<p>Clique no botão para mudar a cor do background da tag <code>body</code>.</p>
+	<button>Mudar a cor do fundo</button>
+	<script>
+		var btn = document.querySelector('button');
+
+		function random(number) {
+			return Math.floor(Math.random() * (number + 1));
+		}
+
+		btn.onclick = function () {
+			var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+			document.body.style.backgroundColor = rndCol;
+		}
+	</script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+		crossorigin="anonymous"></script>
+
+	<footer>
+		<div style="float:left">
+			<p>autor: SENAI-SP</p>
+		</div>
+		<div style="float:right">
+			<p>março de 2021</p>
+		</div>
+	</footer>
+
+
+
+</body>
+
+</html>
